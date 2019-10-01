@@ -143,9 +143,7 @@ LOCAL_SHARED_LIBRARIES := \
     libdl \
     libaudioutils \
     libexpat \
-    libhwbinder \
     libhidlbase \
-    libhidltransport \
     libprocessgroup \
     libutils \
     libhardware_legacy
@@ -373,7 +371,7 @@ endif
 #    LOCAL_SRC_FILES += audio_extn/auto_hal.c
 #endif
 
-LOCAL_SHARED_LIBRARIES += libbase libhidlbase libhwbinder libutils android.hardware.power@1.2 liblog
+LOCAL_SHARED_LIBRARIES += libbase libhidlbase libutils android.hardware.power@1.2 liblog
 LOCAL_SRC_FILES += audio_perf.cpp
 
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_FM_TUNER_EXT)),true)
